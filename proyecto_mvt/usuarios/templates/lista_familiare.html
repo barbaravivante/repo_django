@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Familiares</title>
+    <style>
+        h1 {color:rebeccapurple; font-size:40px;}
+        h2 {color:rgb(81, 81, 97);  font-size:18px;}
+        h3 {color:rgb(9, 9, 247);  font-size:16px;}
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+    <h1 style="text-align:center;">Datos de los Familiares</h1>
+    <h2>
+        <table border="1px" align="center">
+            <tr>
+            <td>Nombre </td>
+            <td>Edad </td>
+            <td>Fecha de Nacimiento </td>
+            </tr>
+    {% for familiar in datos %}
+            <tr>
+            <td>{{familiar.nombre}}</td>
+            <td>{{familiar.edad}}</td>
+            <td>{{familiar.nacimiento}}</td>
+            </tr>
+        {% endfor %}
+        </table>   
+     </h2>       
+     <h3>   <table border="4px" align="center">
+        <tr>
+        
+           <td>        
+                <a class="" href=".">Inicio</a>
+           </td>  
+         </tr>     
+      </h3>          
+            </div>
+       
+</body>        
+</html>
